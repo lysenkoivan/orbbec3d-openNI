@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:id="@+id/root">
+
+    <com.orbbec.view.OpenGLView
+        android:id="@+id/irView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    </com.orbbec.view.OpenGLView>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:background="@android:color/transparent"
+        android:visibility="visible"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/snText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/snStr"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/devTypeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/devTypeStr"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/gainText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gainStr"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="20dp" />
+
+        <SeekBar
+            android:id="@+id/gainBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="0xFFFF"
+            android:progress="0x08"
+            android:text="@string/app_name"/>
+
+        <TextView
+            android:id="@+id/ExpText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/exposure"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="20dp" />
+
+        <SeekBar
+            android:id="@+id/expBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="0xFFFF"
+            android:progress="0x0419"
+            android:text="@string/app_name"/>
+
+        <CheckBox
+            android:id="@+id/checkIR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_light"
+            android:text="@string/enableLaser"
+        />
+
+        <CheckBox
+            android:id="@+id/checkLDP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_light"
+            android:text="@string/enableLDP"
+            />
+
+        <CheckBox
+            android:id="@+id/checkIRFLOOD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_light"
+            android:text="@string/enableIrFlood"
+            />
+
+    </LinearLayout>
+</FrameLayout>
+
